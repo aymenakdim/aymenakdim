@@ -93,15 +93,15 @@ focus: "Embedded Systems | Automotive Electronics | IoT"
 ### 🚗 Automotive ECU Network & Diagnostic Simulator
 C11 · GCC (MSYS2/MinGW-w64) · CMake · Git/GitHub · Python/pytest · C unit-test framework
 Personal project
-• Developed in C a simulator of an automotive ECU network (engine ECU, dashboard) exchanging CAN frames (8 bytes, big-endian,
+- Developed in C a simulator of an automotive ECU network (engine ECU, dashboard) exchanging CAN frames (8 bytes, big-endian,
 scaling factors) over a simulated FIFO bus, in a modular, testable architecture.
-• Virtual engine ECU: sensor validation, 10 Hz control cycle, diagnostic trouble code (DTC OBD-II) management.
-• Dashboard timeout monitoring: stale-data detection after 500 ms with a degraded state; virtual time injection for deterministic tests.
-• Fault injection module (dropped frames, bit-flips, unknown IDs, invalid DLC): faulty frames are rejected and counted without
+- Virtual engine ECU: sensor validation, 10 Hz control cycle, diagnostic trouble code (DTC OBD-II) management.
+- Dashboard timeout monitoring: stale-data detection after 500 ms with a degraded state; virtual time injection for deterministic tests.
+- Fault injection module (dropped frames, bit-flips, unknown IDs, invalid DLC): faulty frames are rejected and counted without
 crashing.
-• UDS (ISO 14229) diagnostic client/server over ISO-TP single frames: read/clear DTC (0x19, 0x14), read data (0x22), negative
+- UDS (ISO 14229) diagnostic client/server over ISO-TP single frames: read/clear DTC (0x19, 0x14), read data (0x22), negative
 response codes (NRC).
-• Custom C unit-test framework (450+ assertions) with non-regression tests: FIFO bus, timeouts (incl. uint32 rollover), fault injection,
+- Custom C unit-test framework (450+ assertions) with non-regression tests: FIFO bus, timeouts (incl. uint32 rollover), fault injection,
 full UDS diagnostic cycle.
 
 ### 🛣️ Traffic Sign Detection — ADAS
